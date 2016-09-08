@@ -32,8 +32,8 @@ public class Person4 {
     private String calc(String input) {
       //Person 4 put your implementation here
       String returned = "";
-      for (char i : input) {
-        char added = i + 1;
+      for (char i : input.toCharArray()) {
+        char added = (char)((int)i + 1);
         returned = returned + added;
       }
       return returned;
