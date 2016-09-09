@@ -1,0 +1,8 @@
+defaultTasks 'jar'
+
+apply plugin: 'java'
+
+dependencies {
+    compile files('M2/M2/lib/resources.jar')
+}
+
