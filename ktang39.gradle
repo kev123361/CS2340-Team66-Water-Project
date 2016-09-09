@@ -10,6 +10,6 @@ jar {
     manifest {
         attributes 'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
                 'Class-Path': '../../lib/resources.jar',
-                'Implementation Title': 'Kevin Build File'
+                'Implementation-Title': 'Kevin Build File'
     }
 }
