@@ -3,6 +3,14 @@ defaultTasks 'jar'
 apply plugin: 'java'
 
 dependencies {
-    compile files('M2/M2/lib/resources.jar')
+    compile files('lib/resources.jar')
+}
+
+jar {
+    manifest {
+        attributes ('Implementation-Title' : 'Kishan Build'
+                    'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+                    'Class-Path': '../../lib/resources.jar')
+    }
 }
 
