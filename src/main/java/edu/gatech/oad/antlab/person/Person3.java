@@ -29,7 +29,7 @@ public class Person3 {
 	 *         object
 	 */
 	public String toString(String input) {
-	  return name + calc(input);
+	  return name + " " + calc(input);
 	}
 	
 	/**
@@ -45,7 +45,7 @@ public class Person3 {
 	  //Person 3 put your implementation here
 	    String output = "";
 		for (int i = input.length() - 1; i >= 0; i--) {
-			output = input.charAt(i) + output;
+			output = output + input.charAt(i);
 		}
 		return output;
 	}
